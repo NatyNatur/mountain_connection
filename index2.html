@@ -11,7 +11,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 
 	<!-- google fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,700|Roboto:100,300,300i,400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,700|Roboto:100,300,300i,400|Oswald:300,700" rel="stylesheet">
 	<!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
@@ -50,9 +50,27 @@
       </div><!-- /.container-fluid -->
     </nav>
 
+    <!-- Creando posteos -->
     <section id="body-newfeed">
-      <div class="posteos"></div>
+      <div class="container-fluid">
+        <div class="row"> 
+          <div class="post-friend">
+            <div class="caja-imagen">
+              <div class="imagen-friend" id="friend1"></div>
+            </div>
+            <div class="name-friend"> <p>Nombre Apellido</p></div>
+            <div class="mensaje-friend"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, consequatur?</p></div>
+            <div class="reacciones-friend">
+              <span class="glyphicon glyphicon-heart-empty"></span>
+              <button type="button" class="btn btn-comentar">Comentar</button>
+            </div>
+            <hr class="line">
+            <textarea placeholder="Escribe tu comentario ..." class="comentar-post none" id="comentario"></textarea>
+          </div> 
+          <hr>
+      </div>
     </section>
+
 
     <!--modal nuevo posteo -->
    <div id="modalPosteo" class="modal fade" role="dialog">
