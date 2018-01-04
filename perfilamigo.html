@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Mountain Connection-Go to Top!</title>
+	<!--bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+	<!-- favicon logo en la pestaña-->
+	<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+	<!-- google fonts Awesome--> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,700|Roboto:100,300,300i,400|Oswald:300,700" rel="stylesheet">
+	<!-- css -->
+  	<link rel="stylesheet" type="text/css" href="assets/css/style2.css">
+	<!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<div class="row">
+	        <div class="navbar-header">
+	            <button type="button" class="navbar-toggle collapsed btn-header" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" id="btn-header">
+	              <span class="sr-only">Toggle navigation</span>
+	              <span class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span>
+	            </button>
+	            <button type="button" class="btn btn-default navbar-btn btn-header" id="btn-notificacion"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></button>
+	            <button type="button" class="btn btn-default navbar-btn btn-header" id="btn-post" data-toggle="modal" data-target="#modalPosteo"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></button>
+	            <button type="button" class="btn btn-default navbar-btn btn-header" id="btn-amigos"><a href="index3.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></button>
+
+	            <a class="navbar-brand logo-nav" href="#"> <span><img alt="Brand" class="imglogo" src="assets/img/logo.png" ></span></a>
+	       	</div>
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	            <ul class="nav navbar-nav navbar-right">
+	              <li><a href="perfil.html">Mi perfil <span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></li>
+	              <li><a href="#">Mis rutas <span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span></a></li>
+	              <li><a href="#">Mis eventos <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></a></li>
+	              <li role="separator" class="divider"></li>
+	              <li><a href="#">Configuración<span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span></a></li>
+	              <li><a href="index.html">Cerrar sesion <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></a></li>
+
+	            </ul>
+	          </div>
+	        </div>
+	    </nav>
+	</header> 
+	<main>
+    <div class="userbox row">
+    <div class="userdata">
+      <div class="col-xs-offset-1 col-xs-10 col-sm-6 col-sm-offset-3">
+        <div class="userimg">
+          <a class="pull-left" href="#">
+            <img class="media-object dp img-circle userprofilepic" src="assets/img/userphotocrop.jpg" style="width: 100px; height:100px;">
+          </a>
+          <div class="media-body userinfo">
+            <h3 class="media-heading">Name Last-Name <br> <small>Nickname</small></h3>
+            <h5><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> month day, year</h5>
+            <h5>Little description <a href="#">a site</a></h5>
+            <div class="progress">
+              <div class="progress-bar"  role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;" data-toggle="tooltip" data-placement="top" title="your progress this month!"> 40%
+              </div>
+            </div>
+          </div> <!-- /.userinfo -->
+        </div>
+      </div>
+    </div> <!-- /.userdata -->
+    </div> <!-- /.userbox -->
+    
+    <div class="userphotos">
+      <div class="container">
+        <h3>My pictures</h3>
+        <div class="row">
+          <div class="col-xs-4 col-sm-3 col-sm-offset-1">
+            <!-- first image -->
+            <a href="#" data-toggle="modal" data-target=".pop-up-1">
+              <img src="assets/img/userphoto.jpg" width="200" class="img-responsive img-rounded center-block" alt="">
+            </a>
+          </div>
+          <div class="col-xs-4 col-sm-3">
+          <!-- second image -->
+          <a href="#" data-toggle="modal" data-target=".pop-up-2">
+            <img src="assets/img/trekking_6.jpg" width="200" class="img-responsive img-rounded center-block" alt="">
+          </a>
+          </div>
+          <div class="col-xs-4 col-sm-3">
+          <!-- third image -->
+          <a href="#" data-toggle="modal" data-target=".pop-up-3">
+            <img src="assets/img/trekking_4.jpg" width="200" class="img-responsive img-rounded center-block" alt="">
+          </a>
+          </div>
+          <!-- Modal content for the first image -->
+          <div class="modal fade pop-up-1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <!-- <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myLargeModalLabel-1">Mixer Board</h4>
+                 </div> -->
+                <div class="modal-body">
+                  <img src="assets/img/userphoto.jpg" class="img-responsive img-rounded center-block" alt="">
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal first image -->
+        <!-- Modal content for the second image -->
+        <div class="modal fade pop-up-2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-2" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <!--
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                  <h4 class="modal-title" id="myLargeModalLabel-2">Lion</h4>
+              </div> -->
+              <div class="modal-body">
+                <img src="assets/img/trekking_6.jpg" class="img-responsive img-rounded center-block" alt="">
+              </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal second image -->
+          <!-- Modal content for the third image -->
+         <div class="modal fade pop-up-3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-3" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <!--
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                  <h4 class="modal-title" id="myLargeModalLabel-3">Lion</h4>
+              </div> -->
+              <div class="modal-body">
+                <img src="assets/img/trekking_4.jpg" class="img-responsive img-rounded center-block" alt="">
+              </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal third image -->
+        </div> <!-- /.row -->
+      </div> <!-- /.container -->
+
+    </div> <!-- /.userphotos -->
+    
+    <div class="userpostsandevents">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-7 userlastposts">
+          <h3>Last posts</h3>
+            <div class="box-with-posts">
+              <div class="emptybox">
+                <!-- aquí va nuevo post -->
+              </div>
+              <div class="post1">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                      <div class="media">
+                        <div class="media-left">
+                          <a href="#">
+                            <img class="media-object img-rounded imginposts" src="assets/img/userphotocrop.jpg" alt="profilepicinpost">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <h4>Nickname</h4>
+                        </div>
+                      </div> <!-- /.media -->
+                    </div>
+                    <div class="panel-body">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat esse tempora maxime eos aliquam labore accusamus similique ad odit assumenda.</p>
+                    </div>
+                    <div class="panel-footer">
+                      <p>
+                        <em>Month day, year at h:min</em>
+                        <button type="button" class="btn btn-sm btnpost-hover btn-primary"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+                        <button type="button" class="btn btn-sm btnpost-hover btn-danger"><span class="glyphicon glyphicon-heart"></span></button>
+                        <br>
+                        Tags:
+                        <a><span class="label label-info">Me</span></a>
+                        <a><span class="label label-info">Freshair</span></a>
+                        <a><span class="label label-info">Mountain</span></a>
+                      | <a>3 <i class="glyphicon glyphicon-comment"></i></a>
+                      | <a>7 <i class="glyphicon glyphicon-share"></i></a>
+                      </p>
+                    </div>
+                  </div>
+                </div> <!-- /post1 -->
+                <div class="post2">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <div class="media">
+                        <div class="media-left">
+                          <a href="#">
+                            <img class="media-object img-rounded imginposts" src="assets/img/userphotocrop.jpg" alt="profilepicinpost">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <h4>Nickname</h4>
+                        </div>
+                      </div> <!-- /.media -->
+                    </div>
+                  <div class="panel-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam beatae id, quae vel perspiciatis fugiat quaerat unde sint, est possimus dignissimos hic officia doloremque architecto, autem sapiente. Iure, ea, cupiditate.</p>
+                  </div>
+                  <div class="panel-footer">
+                      <p>
+                        <em>Month day, year at h:min</em>
+                        <button type="button" class="btn btn-sm btnpost-hover btn-primary"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+                        <button type="button" class="btn btn-sm btnpost-hover btn-danger"><span class="glyphicon glyphicon-heart"></span></button>
+                        <br>
+                        Tags:
+                        <a><span class="label label-info">Me</span></a>
+                        <a><span class="label label-info">To the top</span></a>
+                      | <a>3 <i class="glyphicon glyphicon-comment"></i></a>
+                      | <a>7 <i class="glyphicon glyphicon-share"></i></a>
+                      </p>
+                  </div>
+                  </div>
+                </div> <!-- /post2 -->
+                <div class="post3"></div>
+              </div> <!-- /box-with-posts -->
+            </div> <!-- /.userlastsposts -->
+          <div class="col-xs-12 col-sm-5 userevents">
+          <h3>Events</h3>
+            <div class="panel ">
+              <div class="panel-heading panel-orange"">
+                <h3 class="panel-title text-orange"><span class="glyphicon glyphicon-calendar"></span> Calendar Events</h3>
+              </div>
+              <div class="panel-body">
+                <ul class="media-list">
+                  <li class="media">
+                    <div class="media-left">
+                      <div class="panel panel-default text-center date">
+                        <div class="panel-heading month">
+                          <span class="panel-title panel-orange text-orange strong">Jan</span>
+                        </div>
+                        <div class="panel-body day">23</div>
+                      </div>
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading">Lorem ipsum dolor sit. </h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, velit.</p>
+                    </div>
+                  </li>
+                  <li class="media">
+                    <div class="media-left">
+                      <div class="panel panel-default text-center date">
+                        <div class="panel-heading panel-orange month">
+                          <span class="panel-title panel-orange text-orange strong">Feb</span>
+                      </div>
+                      <div class="panel-body day">16</div>
+                    </div>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">Lorem ipsum.</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                </li>
+                <li class="media">
+                  <div class="media-left">
+                    <div class="panel panel-default text-center date">
+                     <div class="panel-heading panel-orange month">
+                        <span class="panel-title text-orange strong all-caps">FEB</span>
+                      </div>
+                      <div class="panel-body day">18</div>
+                    </div>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">Lorem ipsum dolor.</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias sed consequuntur adipisci.</p>
+                  </div>
+                </li>
+              </ul>
+              <a href="#" class="btn btn-block btnevents">More Events »</a>
+            </div>
+          </div>
+          </div> <!-- /.userevents -->
+        </div> <!-- /.row -->
+      </div> <!-- /.container -->
+    </div> <!-- /.userpostsandevents -->
+
+  </main>
+
+<!--scripts-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+	<script src="https://use.fontawesome.com/1affae7a95.js"></script>
+	<script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+</html>
