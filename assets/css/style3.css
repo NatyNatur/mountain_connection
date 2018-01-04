@@ -1,0 +1,121 @@
+/*Contactos*/
+/* 
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+
+font-family: "alpha Slab", "sans-serif"; mas gruesa 
+font-family: "Oswald"; "sans-serif" mas delgada 
+
+COLORES 
+
+#EC6C01 naranjo 
+#1E4873 azul 
+#FFF blanco 
+
+*/ 
+
+/* Timeline */
+.imglogo {
+  max-height: 1.875em;
+}
+.logo-nav{
+  padding-top: 10px;
+}
+#body-newfeed{
+  position: relative;
+  top: 66px;
+}
+
+/*nav bar */
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: #325D7F;
+  border-style: none;
+}
+.navbar-default .navbar-toggle {
+  border-color: #325D7F ;
+}
+.navbar-toggle{
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.navbar-brand{
+  font-size: 25px;
+}
+
+#bs-example-navbar-collapse-1 ul li a{
+  text-align: right
+}
+.navbar-default .navbar-nav>li>a {
+  color: #EC6C01;
+}
+.btn-header{
+  color: #EC6C01;
+  font-size: 25px;
+  float: right;
+}
+.btn-default {
+  color: #EC6C01;
+  background-color: #325D7F;
+  border-color: #325D7F;
+  font-size: 25px;
+}
+
+
+.eyes {
+  background: #1E4873;
+  color: #EC6C01;
+  height: 4em;
+  width: 78em;
+}
+
+
+.search {
+  background: #1E4873;
+  height: 4em;
+  width: 78em;
+} 
+
+.contactos {
+  background: #1E4873;
+  height: auto;
+  width: 100%;
+}
+
+.contact {
+  background: #FFF;
+  height: auto;
+  margin: 5em 1em 1em 7em;
+  padding: 1em 1em 1em 1em;
+  width: 65em;
+}
+.abc {
+  background: #EC6C01;
+  height: 1em;
+  width: auto;
+}
+
+.photo {
+  background-size: 193%;
+  height: 4em;
+  width: 4em;
+}
+.button{
+  background: red;
+}
+.footer {
+  background: #325D7F;
+  color: #FFF;
+  height: 5em;
+  width: 78em;
+}
+
+.small-box {
+  float: left;
+  height: 4em;
+  margin: 1em 1em 1em 1em;
+  text-align: center;
+  width: 3em;
+}
+.small-box: hover {
+  color: #F8B195;
+}
