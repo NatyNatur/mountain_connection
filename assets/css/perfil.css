@@ -1,0 +1,68 @@
+main {
+	margin-top: 65px;
+}
+
+.userprofilepic {
+	min-height: 9.375em;
+	min-width: 9.375em;
+}
+
+.userdata, .userphotos, .userpostsandevents {
+	padding-top: 2em;
+}
+
+.userinfo {
+	padding-left: 1.5em;
+}
+
+.imginposts {
+	max-width: 40px;
+	height: auto;
+}
+
+.btnpost-hover {
+  font-weight: normal;
+  color: #333333;
+  cursor: pointer;
+  background-color: inherit;
+  border-color: transparent;
+}
+
+.btnpost-hover-alt {
+  font-weight: normal;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: inherit;
+  border-color: transparent;
+}
+
+.panel.date {
+    margin: 0px;
+    width: 60px;
+    text-align: center;
+}
+
+.panel.date .month {
+    background-color: #F8C397;
+    padding: 2px 0px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.panel.date .day {
+    padding: 3px 0px;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.btnevents {
+	font-size: 1.25em;
+}
+
+.panel-orange {
+	background-color: #F8C397;
+}
+
+.text-orange {
+	color: #EC6C01;
+}
