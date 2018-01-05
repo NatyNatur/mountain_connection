@@ -1,33 +1,50 @@
 $(document).ready(function(){
-  //mostrar textarea para comentar 
-  $(".btn-comentar").click(function(){
-    $("#comentario").removeClass('none').addClass('block');
-  }); 
+	//mostrar textarea para comentar 
+	$(".btn-comentar").click(function(){
+		$("#comentario").removeClass('none').addClass('block');
+	}); 
+//Agregar post 
+$("#btn-publicar").click(function(){
+  var firstName= "First name"; //reemplazar para llamado desde base de datos. 
+  var lastName= "Last Name"; 
+  var name = firstName + " " + lastName + " -- "; 
+  var mypost = $("#mypost").val(); 
+  var momentoActual= new Date();
+  var hora= momentoActual.getHours(); 
+  var minutos= momentoActual.getMinutes(); 
+  var horaImprimible= hora + ":" + minutos; 
+  console.log(mypost);
+  $("#post-friend").before('<div class="container-fluid">'+
+                            '<div class="row">'+
+                              '<div class="post-friend panel panel-default" id="post-friend">'+
+                                '<div class="row">' +
+                                  '<div class="panel-heading">'+
+                                    '<div class="caja-imagen">'+
+                                      '<div class="imagen-friend" id="myimg"></div>'+
+                                    '</div>'+
+                                    '<div class="name-friend"> <p>'+ name +'</p></div>'+
+                                  '</div>'+
+                                '</div>'+
 
-  //agregar comentario
-$('#comentario').bind("enterKey",function(e){
-var comentario= $("#comentario").val(); 
-var momentoActual= new Date();
-    var hora= momentoActual.getHours(); 
-    var minutos= momentoActual.getMinutes(); 
-    var horaImprimible= hora + ":" + minutos; 
-$(".line").after('<div class="caja-comentario-post">' +
-                            '<div class="comentario-de-post">'+
-                                '<p class="comentario-nuevo">' + horaImprimible + '</p><br>'+
-                                '<p class="comentario-nuevo">' + comentario + '</p>'+
-                                '<div id="img-comentario-post"></div>'+
+                                '<div class="row">'+
+                                  '<div class="mensaje-friend"><p>' + mypost +'</p></div>'+
+                                '</div>'+
+                  
+                                '<div class="row">'+
+                                 '<div class="reacciones-friend">'+
+                                    '<button type="button" class="btn btn-xs btn-link"><span class="glyphicon glyphicon-thumbs-up"></span></button>'+
+                                    '<button type="button" class="btn btn-comentar">Comentar</button>'+
+                                  '</div>'+
+                                '</div>'+
+                                
+                                '<hr class="line">'+
+                                '<textarea placeholder="Escribe tu comentario ..." class="comentar-post none" id="comentario"></textarea>'+
                               '</div>'+
-                            '</div>'); 
-$("#comentario").val("");
-});
-$('#comentario').keyup(function(e){
-if(e.keyCode == 13)
-{
-  $(this).trigger("enterKey");
-}
+                            '</div>'+
+                          '</div>'); 
+  $("#mypost").val("");
 
-;
-});
+}); 
 
   $(document).on('change', '.btn-file :file', function() {
     var input = $(this),

@@ -31,7 +31,7 @@
             <button type="button" class="btn btn-default navbar-btn btn-header" id="btn-post" data-toggle="modal" data-target="#modalPosteo"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></button>
             <button type="button" class="btn btn-default navbar-btn btn-header" id="btn-amigos"><a href="index3.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></button>
 
-            <a class="navbar-brand logo-nav" href="#"> <span><img alt="Brand" class="imglogo" src="assets/img/logo.png" ></span></a>
+            <a class="navbar-brand logo-nav" href="index2.html"> <span><img alt="Brand" class="imglogo" src="assets/img/logo.png" ></span></a>
           </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -49,27 +49,116 @@
         
       </div><!-- /.container-fluid -->
     </nav>
+    
+    <!--cuerpo timeline -->
+  <section id="cuerpo">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- noticias relacionadas --> 
+        <section id="noticias">
+          <div class="container-fluid">
+            <div class="row other">
+              <h5>Noticias para tí</h5>
+            </div>
+            <div class="row">
+              <div class="col-xs-6 col-lg-3"> <!-- right panel -->
+                <div class="panel panel-default" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);">
+                  <div class="panel-body" style="margin-left: 10px;margin-right: 10px;">
+                    <div class="text-center">
+                      <h5 class="text-success"><strong>Titulo noticia</strong></h5>
+                    </div>
+                    <p class="resumen-noticia">Lorem ipsum dolor sit amet, consectetur adipisicing elit...<br> <a href="#"> Leer más </a> </p>
+                    
+                  </div>
+                </div>
+              </div>
 
-    <!-- Creando posteos -->
-    <section id="body-newfeed">
-      <div class="container-fluid">
-        <div class="row"> 
-          <div class="post-friend">
-            <div class="caja-imagen">
-              <div class="imagen-friend" id="friend1"></div>
+              <div class="row">
+              <div class="col-xs-6 col-lg-3"> <!-- right panel -->
+                <div class="panel panel-default" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);">
+                  <div class="panel-body" style="margin-left: 10px;margin-right: 10px;">
+                    <div class="text-center">
+                      <h5 class="text-success"><strong>Titulo noticia</strong></h5>
+                    </div>
+                    <p class="resumen-noticia">Lorem ipsum dolor sit amet, consectetur adipisicing elit...<br> <a href="#"> Leer más </a> </p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="name-friend"> <p>Nombre Apellido</p></div>
-            <div class="mensaje-friend"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, consequatur?</p></div>
-            <div class="reacciones-friend">
-              <span class="glyphicon glyphicon-heart-empty"></span>
-              <button type="button" class="btn btn-comentar">Comentar</button>
             </div>
-            <hr class="line">
-            <textarea placeholder="Escribe tu comentario ..." class="comentar-post none" id="comentario"></textarea>
-          </div> 
-          <hr>
-      </div>
-    </section>
+          </div>
+        </section>
+
+
+        <!-- Creando posteos -->
+        <section id="body-newfeed">
+          <div class="container-fluid">
+            <div class="row other">
+              <h5>Publicaciones Recientes</h5>
+            </div>
+            <div class="row"> 
+              <div class="post-friend panel panel-default" id="post-friend">
+
+                <div class="row">
+                  <div class="panel-heading">
+                    <div class="caja-imagen">
+                      <div class="imagen-friend" id="friend1"></div>
+                    </div>
+                    <div class="name-friend"> <p>Nombre Apellido</p></div>
+                  </div>  
+                </div>
+
+                <div class="row">
+                  <div class="mensaje-friend"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quis omnis voluptatibus praesentium nulla perspiciatis nam, tenetur porro illum veniam sit impedit, harum incidunt dolor nisi. Quas earum excepturi, minus!</p></div>
+                </div>
+                
+                <div class="row">
+                  <div class="reacciones-friend">
+                    <button type="button" class="btn btn-xs btn-link"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+                    <button type="button" class="btn btn-comentar">Comentar</button>
+                  </div>
+                </div>
+                
+                <hr class="line">
+                <textarea placeholder="Escribe tu comentario ..." class="comentar-post none" id="comentario"></textarea>
+              </div> 
+            </div>
+
+            <div class="row"> 
+              <div class="post-friend panel panel-default" id="post-friend">
+
+                <div class="row">
+                  <div class="panel-heading">
+                    <div class="caja-imagen">
+                      <div class="imagen-friend" id="friend1"></div>
+                    </div>
+                    <div class="name-friend"> <p>Nombre Apellido</p></div>
+                  </div>  
+                </div>
+
+                <div class="row">
+                  <div class="mensaje-friend"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quis omnis voluptatibus praesentium nulla perspiciatis nam, tenetur porro illum veniam sit impedit, harum incidunt dolor nisi. Quas earum excepturi, minus!</p></div>
+                </div>
+                
+                <div class="row">
+                  <div class="reacciones-friend">
+                    <button type="button" class="btn btn-xs btn-link"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+                    <button type="button" class="btn btn-comentar">Comentar</button>
+                  </div>
+                </div>
+                
+                <hr class="line">
+                <textarea placeholder="Escribe tu comentario ..." class="comentar-post none" id="comentario"></textarea>
+              </div> 
+            </div>
+          </div>
+        </section>
+      </div> <!--row cuerpo -->
+    </div> <!-- container cuerpo -->
+  </section>
+    
+    
+    
 
 
     <!--modal nuevo posteo -->
@@ -80,6 +169,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <p class="title-modal-post text-center">New Post</p>
         </div>
         <div class="modal-body">
           <div class="container-fluid">
@@ -87,13 +177,13 @@
               <div id="caja-nuevo-post">
                 <div class="imagen-usuario"></div> 
                 <div id="nombre-usuario-caja-posteo">
-                  <textarea placeholder="Nuevo posteo"></textarea>
+                  <textarea placeholder="Nuevo posteo" id="mypost"></textarea>
                 </div>     
               </div>
             </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Publicar</button>
+          <button type="button" class="btn btn-info" id="btn-publicar" data-dismiss="modal">Publicar</button>
         </div>
       </div>
 
