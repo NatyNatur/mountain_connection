@@ -62,21 +62,24 @@ COLORES
 
 
 .eyes {
-  background: #1E4873;
+  /*background: #1E4873;*/
   color: #EC6C01;
-  height: 4em;
-  width: 78em;
+  /*height: 4em;*/
+  /*width: 78em;*/
+  padding-top: 65px;
+  border-bottom: 1px solid
 }
 
 
 .search {
-  background: #1E4873;
+  /*background: #1E4873;*/
   height: 4em;
-  width: 78em;
-} 
+  /*width: 78em;*/
+  padding-top: 5px;
+}
 
 .contactos {
-  background: #1E4873;
+  /*background: #1E4873;*/
   height: auto;
   width: 100%;
 }
