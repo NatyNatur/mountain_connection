@@ -66,16 +66,18 @@ COLORES
   color: #EC6C01;
   /*height: 4em;*/
   /*width: 78em;*/
-  padding-top: 65px;
-  border-bottom: 1px solid
+  border-bottom: 1px solid; 
 }
 
 
 .search {
   /*background: #1E4873;*/
-  height: 4em;
+  height: 3em;
+  width: 90%;
   /*width: 78em;*/
   padding-top: 5px;
+  margin-left: 15px;
+  margin-bottom: 0px;
 }
 
 .contactos {
@@ -95,6 +97,9 @@ COLORES
   background: #EC6C01;
   height: 1em;
   width: auto;
+  font-family: "alpha Slab", "sans-serif" ;
+  padding-left: 10px;
+
 }
 
 .photo {
@@ -121,4 +126,29 @@ COLORES
 }
 .small-box: hover {
   color: #F8B195;
+}
+
+/*extras stilos*/
+.menu-amigos{ 
+  justify-content: space-around;
+  display: flex;
+}
+
+.body-amigos{
+  padding-top: 50px;
+}
+
+/*estilos nav bar*/
+
+.fa{
+  color: #EC6C01; 
+}
+
+td h4, td h5, .menu-amigos{
+  font-size: 16px;
+  font-family: "Oswald", "sans-serif";
+}
+
+tr h3{
+  font-family: "alpha Slab", "sans-serif" ;
 }

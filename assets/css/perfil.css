@@ -99,3 +99,57 @@ main {
 .imgbox {
   padding: 0.5em 0;
 }
+
+/**/
+
+/*nav bar */
+.navbar-header{
+  background-color: #325D7F;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: #325D7F;
+  border-style: none;
+}
+.navbar-default .navbar-toggle {
+  border-color: #325D7F ;
+}
+.navbar-toggle{
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.navbar-brand{
+  font-size: 25px;
+}
+#bs-example-navbar-collapse-1{
+  background-color: #325D7F;
+}
+
+#bs-example-navbar-collapse-1 ul li a{
+  text-align: right; 
+  font-family: "Oswald", "sans-serif" ;
+  font-size: 16px;
+  color: #EC6C01;
+
+}
+.navbar-default .navbar-nav>li>a {
+  color: #EC6C01;
+}
+.btn-header{
+  color: #EC6C01;
+  font-size: 25px;
+  float: right;
+}
+.btn-default {
+  color: #EC6C01;
+  background-color: #325D7F;
+  border-color: #325D7F;
+  font-size: 25px;
+}
+
+.a-color{
+  color: #EC6C01;
+  padding-right: 10px;
+}
+.fa{
+  color: #EC6C01; 
+}
