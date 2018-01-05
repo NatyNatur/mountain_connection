@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="assets/css/perfil.css">
 
 	<!-- google fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,700|Roboto:100,300,300i,400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,700|Roboto:100,300,300i,400|Oswald:300,700" rel="stylesheet">
 	<!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
@@ -41,8 +41,8 @@
               <li><a href="#">Mis rutas <span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span></a></li>
               <li><a href="#">Mis eventos <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></a></li>
               <li role="separator" class="divider"></li>
-              <li><a href="#">Configuración<span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span></a></li>
-              <li><a href="index.html">Cerrar sesion <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></a></li>
+              <li><a href="#">Configuración<span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a></li>
+              <li><a href="index.html">Cerrar sesion <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span></a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div> <!-- /.row -->
@@ -66,7 +66,7 @@
             <div class="container-fluid">
               <div class="row">
                 <div id="caja-nuevo-post">
-                  <div class="imagen-usuario"></div> 
+                  <div class="imagen-usuario"></div>
                   <div id="nombre-usuario-caja-posteo">
                     <textarea placeholder="Nuevo posteo"></textarea>
                   </div>
@@ -95,7 +95,7 @@
             <h5><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> month day, year</h5>
             <h5>Little description <a href="#">a site</a></h5>
             <div class="progress">
-              <div class="progress-bar"  role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;" data-toggle="tooltip" data-placement="top" title="your progress this month!"> 40%
+              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;" data-toggle="tooltip" data-placement="top" title="your progress this month!"> 40%
               </div>
             </div>
           </div> <!-- /.userinfo -->
@@ -106,9 +106,15 @@
     
     <div class="userphotos">
       <div class="container">
-        <h3>My pictures</h3>
+        <h3>My pictures
+          <small class="uploadnewphoto"><a href="#" data-toggle="modal" data-target=".pop-up-newimage">Add new picture <span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a></small>
+        </h3>
         <div class="row">
           <div class="col-xs-4 col-sm-3 col-sm-offset-1">
+            <!-- new image -->
+            <img id='img-upload'/ width="200" class="img-responsive img-rounded center-block">
+          </div>
+          <div class="col-xs-4 col-sm-3">
             <!-- first image -->
             <a href="#" data-toggle="modal" data-target=".pop-up-1">
               <img src="assets/img/userphoto.jpg" width="200" class="img-responsive img-rounded center-block" alt="">
@@ -120,12 +126,39 @@
             <img src="assets/img/trekking_6.jpg" width="200" class="img-responsive img-rounded center-block" alt="">
           </a>
           </div>
-          <div class="col-xs-4 col-sm-3">
-          <!-- third image -->
+          <!--<div class="col-xs-4 col-sm-3">
+           third image
           <a href="#" data-toggle="modal" data-target=".pop-up-3">
             <img src="assets/img/trekking_4.jpg" width="200" class="img-responsive img-rounded center-block" alt="">
           </a>
-          </div>
+          </div> -->
+          <!-- Modal content for the new image -->
+          <div class="modal fade pop-up-newimage" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-0" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myLargeModalLabel-0">Upload image</h4>
+                 </div>
+                <div class="modal-body">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <span class="input-group-btn">
+                        <span class="btn btn-file btn-orange text-orange">
+                          Browse… <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> <input type="file" accept="image/png, image/jpeg, image/gif" id="imgInp">
+                        </span>
+                      </span>
+                      <input id='urlname' type="text" class="form-control" readonly>
+                    </div>
+                    <br>
+                    <button id="clear" class="btn btn-orange text-orange">Clear</button>
+                      <img id='img-upload'/>
+                  </div>
+                </div>
+              </div><!-- /.modal-content -->
+            </div>
+          </div> <!-- /.modal.fade.pop-up-newimage -->
+
           <!-- Modal content for the first image -->
           <div class="modal fade pop-up-1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
             <div class="modal-dialog modal-lg">
@@ -172,7 +205,6 @@
           </div><!-- /.modal third image -->
         </div> <!-- /.row -->
       </div> <!-- /.container -->
-
     </div> <!-- /.userphotos -->
     
     <div class="userpostsandevents">

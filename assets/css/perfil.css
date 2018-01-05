@@ -8,7 +8,36 @@ main {
 }
 
 .userdata, .userphotos, .userpostsandevents {
-	padding-top: 2em;
+	padding: 2em 0;
+}
+
+.uploadnewphoto {
+  margin-left: 1em;
+}
+
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: none;
+  background: white;
+  cursor: inherit;
+  display: block;
+}
+
+#img-upload{
+  width: 100%;
 }
 
 .userinfo {
@@ -59,7 +88,7 @@ main {
 	font-size: 1.25em;
 }
 
-.panel-orange {
+.btn-orange, .panel-orange {
 	background-color: #F8C397;
 }
 
