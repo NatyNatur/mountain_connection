@@ -95,3 +95,7 @@ main {
 .text-orange {
 	color: #EC6C01;
 }
+
+.imgbox {
+  padding: 0.5em 0;
+}
